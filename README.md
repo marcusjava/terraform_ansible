@@ -44,7 +44,7 @@ module "aws_prod" {
 ## 2 - Criando maquina de desenvolvimento e produção.
 
 ```sh
-cd env/dev ou env/prod
+cd env/dev ou cd env/prod
 terraform init
 terraform plan
 terraform apply
