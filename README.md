@@ -41,21 +41,17 @@ module "aws_prod" {
 }
 ```
 
-## 2 - Criando maquina de desenvolvimento.
+## 2 - Criando maquina de desenvolvimento e produção.
 
 ```sh
-cd env/dev
+cd env/dev ou env/prod
 terraform init
 terraform plan
 terraform apply
+ansible-playbook playbook.yml -i hosts.yml -u user --private-key ssh-key
 ```
 
-## 3 - Executar projeto
-
-```sh
-terraform plan
-terraform apply
-```
+O arquivo hosts.yml deve conter o ip publico do servidor
 
 ## Autor
 
