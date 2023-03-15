@@ -41,11 +41,13 @@ module "aws_prod" {
 }
 ```
 
-## 2 - Criar arquivo terraform.tfvars na raiz do projeto com as seguintes variaveis.
+## 2 - Criando maquina de desenvolvimento.
 
 ```sh
-key_name = Nome da chave dentro da AWS. Ex - prod_key
-key_file = Arquivo da chave publica que será enviada. Ex - prod_key.pub
+cd env/dev
+terraform init
+terraform plan
+terraform apply
 ```
 
 ## 3 - Executar projeto
